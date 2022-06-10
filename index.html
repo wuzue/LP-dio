@@ -1,95 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-    <title>Fundamentos - display flex</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-        .flex-container {
-            margin: 0px;
-            padding: 0px;
-            display: flex;
-            list-style: none;
-            max-width: 500px;
-        }
-
-        .flex-item {
-            background: blue;
-            height: 50px;
-            width: 50px;
-            line-height: 50px;
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            margin: 5px;
-        }
-
-        .row {
-            flex-direction: row;
-        }
-
-        .row-reverse {
-            flex-direction: row-reverse;
-        }
-
-        .row-reverse li {
-            background-color: red;
-        }
-
-        .column {
-            float: left;
-            flex-direction: column;
-        }
-
-        .column li {
-            background-color: orange;
-        }
-
-        .column-reverse {
-            float: right;
-            flex-direction: column-reverse;
-        }
-
-        .column-reverse li {
-            background-color: purple;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Turismos</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <ul class="flex-container row">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-    </ul>
+    <header>
+        <h1>FlexTurismos</h1>
+        <ul>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#planos">Planos</a></li>
+        </ul>
+    </header>
 
-    <ul class="flex-container row-reverse">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-    </ul>
+    <div>
+        <div>
+            <h1>Flex <br>Turismos</h1>
+            <p>O melhor serviço para você!</p>
+            <a href="">Saiba Mais!</a>
+        </div>
 
-    <ul class="flex-container column">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-    </ul>
+        <div>
+            <div><img src="./images/0-main.png" alt="banner de apresentação"></div>
+        </div>
+    </div>
 
-    <ul class="flex-container column-reverse">
-        <li class="flex-item">1</li>
-        <li class="flex-item">2</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">5</li>
-    </ul>
+    <div>
+        <div>
+            <img src="./images/1-quem-somos.png" alt="balcão de atendimento">
+        </div>
+
+        <div>
+            <h2>Quem somos</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h2>Serviços</h2>
+        </div>
+
+        <div>
+            <div>
+                <div><img src="./images/icon-2.png" alt="hospedagens"></div>
+                <p>Hospedagens</p>
+                <a href="#">Comprar Agora</a>
+            </div>
+
+            <div>
+               <div><img src="./images/icon-1.png" alt="pacote de viagens"></div>
+               <p>Pacotes de viagens</p>
+               <a href="#">Comprar Agora</a>
+            </div>
+
+            <div>
+                <div><img src="./images/icon-3.png" alt="roteiros personalizados"></div>
+                <p>Roteiros personalizados</p>
+                <a href="#">Comprar Agora</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+
+        <div>
+            <h3>Plano 2</h3>
+            <ul>
+                <li>Suporte 24h</li>
+                <li>Serviços de quarto</li>
+                <li>Guia turístico</li>
+            </ul>
+            <a href="#">Saiba Mais!</a>
+        </div>
+
+        <div>
+            <h3>Plano 2</h3>
+            <ul>
+                <li>Suporte 24h</li>
+                <li>Serviços de quarto</li>
+                <li>Guia turístico</li>
+                <li>Roteiro de trilhas</li>
+                <li>Serviço personalizado</li>
+            </ul>
+            <a href="#">Saiba Mais!</a>
+        </div>
+
+        <div>
+            <h3>Plano 3</h3>
+            <ul>
+                <li>Suporte 24h</li>
+                <li>Serviços de quarto</li>
+                <li>Guia turístico</li>
+                <li>Roteiro de trilhas</li>
+                <li>Serviço personalizado</li>
+                <li>Área Vip</li>
+            </ul>
+            <a href="#">Saiba Mais!</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2021 CSS Flexbox</p>
+        <p>Desenvolvido por: Seu nome aqui dev</p>
+    </footer>
 </body>
-
 </html>
